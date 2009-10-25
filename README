@@ -1,0 +1,39 @@
+# crBarcodePlugin #
+
+## Introduction ##
+
+This plugin provides Barcode image creation for the following formats:
+
+ * Code128
+ * Code 39  
+ * EAN 13
+ * Interleaved 2 of 5
+ * PostNET
+ * UPC-A
+
+This plugin is a wrapper for PEAR Barcode library with same minimal changes needed to work with PHP 5.x and symfony framework.
+
+## Subversion download ##
+
+You can download the latest version of this plugin from:
+
+     http://svn.symfony-project.com/plugins/crBarcodePlugin/trunk/
+
+## Installation ##
+
+After downloading plugin into symfony plugins directory, just clean the cache:
+
+  $ ./symfony cc
+
+## Usage ##
+
+  ...
+
+  $bcode=crBarcode::getInstanceForCode39();
+
+  $bcode->renderImage('123456789012');
+
+  ...
+
+##Author##
+Lic. Christian A. Rodriguez <car@cespi.unlp.edu.ar>

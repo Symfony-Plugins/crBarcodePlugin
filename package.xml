@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.6" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>crBarcodePlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>Barcode generation</summary> 
+<description>
+This plugin provides Barcode image creation for the following formats:
+
+ * Code128
+ * Code 39
+ * EAN 13
+ * Interleaved 2 of 5
+ * PostNET
+ * UPC-A
+
+This plugin is a wrapper for PEAR Barcode library with same minimal changes needed to work with PHP 5.x and symfony framework.
+</description>
+ <lead>
+  <name>Christian A. Rodriguez</name>
+  <user>chrodriguez</user>
+  <email>car@cespi.unlp.edu.ar</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-10-25</date>
+ <time>18:00:00</time>
+ <version>
+  <release>0.0.1</release>
+  <api>1.2.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.org/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+   <file role="data" name="README" />
+   <dir name="lib">
+    <dir name="Image">
+      <file role="data" name="Barcode.php" />
+      <dir name="docs">
+        <file role="data" name="Readme.txt" />
+        <file role="data" name="ChangeLog" />
+      </dir>
+      <dir name="Barcode">
+        <file role="data" name="code128.php" />
+        <file role="data" name="Code39.php" />
+        <file role="data" name="ean13.php" />
+        <file role="data" name="int25.php" />
+        <file role="data" name="postnet.php" />
+        <file role="data" name="upca.php" />
+      </dir>
+    </dir>
+    <file role="data" name="crBarcode.class.php" />
+   </dir>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.1.0</min>
+    <max>1.2.0</max>
+    <exclude>1.2.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+    <version>
+      <release>0.0.1</release>
+      <api>1.2.0</api>
+    </version>
+    <stability>
+     <release>beta</release>
+     <api>beta</api>
+    </stability>
+    <license uri="http://www.symfony-project.org/license">MIT license</license>
+    <date>2009-02-27</date>
+    <license>MIT</license>
+    <notes>
+      * First version
+    </notes>
+  </release>
+ </changelog>
+</package>
