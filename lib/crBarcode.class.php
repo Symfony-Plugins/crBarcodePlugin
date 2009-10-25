@@ -100,6 +100,10 @@ class crBarcode
    */
   private function __construct($type,$image_type)
   {
+    if (!function_exists('imagecreate'))
+    {
+      throw new LogicException('gd extension is required');
+    }
     $this->type=$type;
     $this->image_type=$image_type;
   }
